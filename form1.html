@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+   
+        <title>
+            Task33
+        </title>
+
+        </head>
+        <body>
+            <form method="post">
+
+            <fieldset>
+        <legend>Personal Information</legend><!--Add <div> Tags-->
+
+   
+          <p> <label for="firstname">First Name*:</label>
+        <input id="firstname" name="name" type="text" placeholder="Your first name" required></p> 
+            
+        <p><label for="lastname">Last Name*:</label>
+        <input id="lastname" name="name" type="text" placeholder="Your last name" required></p>
+
+        <p><label for="email">Email*:</label>
+        <input  type="email" name="email" id="email" placeholder="Your email address" required></p>
+      
+        <p><label>Password*:</label>
+            <input type="password" id="password" required></p>
+
+       <p><label>Confirm Password*:</label> 
+        <input type="password"  id="confirm_password" required></p>
+
+
+            </fieldset>
+            </form>
+
+            <form method="post">
+                <fieldset>
+                    <legend>Profile Information</legend>
+
+                 <div> 
+                      <p> <label>Grade Level </label><!--radio type menu-->
+
+                   <input type="radio"  name="gradelevel" value="freshman"  />Freshman
+                    
+                   <input type="radio" name="gradelevel" value="sophomore"/>Sophomore
+                   
+                   <input  type="radio" name="junior" />Junior
+                   
+                   <input  type="radio" name="gradelevel" value="senior" />Senior
+
+                   <input  type="radio" name="gradelevel" value="graduate" />Graduate
+                   
+                   </p>
+                </div>
+     
+                  <div>
+                   <p> <label>Favorite Genre of Music*:</label>
+
+                    <select name="music" multiple="multiple" size="4" required>
+                        <!--option to select more than one genre(personal choice)-->
+
+                        <option value="rock" >rock</option>
+                        <option value="hip hop" >hip hop</option>
+                        <option value="edm" >EDM</option>
+                        <option value="classical" >classical</option>
+
+                    </select>
+                
+                </p>
+            </div>
+
+            <div>
+                <p> <label>Favorite Member of Wu Tang Clan*:</label>
+                    <!--Drop down menu-->
+
+                    <select name="member"  required >
+
+                    <option value="">--Select--</option>
+
+                    <option value="RzA">RzA</option>
+
+                    <option value="GzA">GzA</option>
+
+                    <option value="Ol'Dirty">O'l Dirty</option>
+
+                    <option value="Inspectah Deck">Inspectah Deck</option>
+
+                    <option value="Raekwon">Raekwon</option>
+
+                    <option value="U-God">U-God</option>
+
+                    <option value="GhostfaceKillah">GhostfaceKillah</option>
+
+                    <option value="Method Man">Method Man</option>
+
+                </select>
+                </p>
+                </div>
+                
+                <p> <input type="checkbox"> Sign me for spam emails, because I don't get enough.</p>
+
+                 </fieldset>
+                 
+                <p>Required <input type="submit"></p>
+
+            </form>
+
+
+
+        </body>
+
+    
+</html>
